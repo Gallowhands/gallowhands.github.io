@@ -4,14 +4,15 @@
 <style>body{font:16px/1.6 system-ui,sans-serif;max-width:40rem;margin:3rem auto;padding:0 1rem;color:#222;background:#fafafa}</style>
 </head><body>
 <h1>room: privacy policy</h1>
-<p>Last updated 24 October 2026.</p>
+<p>Last updated 24 October 2026 (reading mail and the calendar added).</p>
 <p><b>room</b> is a personal program used only by its owner, on his own computer, with his own Google account.</p>
 <h2>What it reads</h2>
-<p>With the owner's permission, through the Gmail API, it reads message <b>headers</b>: sender, subject, date, labels (such as read or unread), whether he replied, and the List-Unsubscribe header. It does not read message bodies or attachments.</p>
+<p>With the owner's permission, through the Gmail API, it reads message <b>headers</b> (sender, recipients, subject, date, labels such as read or unread, and the List-Unsubscribe header) and Gmail's one-line preview of each message. When the owner opens a message to read it, room fetches that message's text to show it; that text is kept in memory only and never written to disk. It does not download attachments.</p>
+<p>Through the Google Calendar API it reads the owner's calendar, read-only, to show what's coming up and to remind him before events.</p>
 <h2>Where it goes</h2>
-<p>Everything it reads is stored only on the owner's own computer. It is not sent to any server, not shared with anyone, not sold, and not used for advertising. No one but the owner has access to it.</p>
+<p>Everything it keeps is stored only on the owner's own computer, encrypted with Windows' per-user encryption (it opens only for his Windows account on that machine). It is not sent to any server, not shared with anyone, not sold, and not used for advertising. No one but the owner has access to it.</p>
 <h2>What it changes</h2>
-<p>Nothing, unless the owner presses a key to act: unsubscribing from a sender (using the sender's own List-Unsubscribe mechanism), or labelling or archiving a message. It never deletes mail.</p>
+<p>Nothing, unless the owner presses a key to act: unsubscribing from a sender (using the sender's own List-Unsubscribe mechanism), starring, marking as read, labelling or archiving a message, or keeping a sender out of his inbox (which archives their mail). It never deletes mail and never changes the calendar.</p>
 <h2>Google user data</h2>
 <p>room's use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.</p>
 <h2>Removing access</h2>
